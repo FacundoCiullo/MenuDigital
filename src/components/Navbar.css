@@ -1,0 +1,22 @@
+.nav-mobile {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: #111;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  z-index: 50;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Modo desktop NO lo muestro */
+@media (min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
+}
