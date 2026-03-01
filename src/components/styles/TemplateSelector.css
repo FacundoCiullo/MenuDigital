@@ -1,0 +1,52 @@
+.template-selector {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #000000; /* fondo general */
+  position: relative;
+  width: 100%; /* ajusta según necesites */
+}
+
+.selector-toggle {
+  width: 100%;
+  padding: 10px;
+
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.arrow {
+  font-size: 12px;
+}
+
+.selector-menu {
+  
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 0;
+  list-style: none;
+  color: #f0f0f0;
+  background-color: #000000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  /* Para que esté siempre por encima */
+  z-index: 9999; /* muy alto para que supere otros elementos */
+}
+
+.selector-item {
+  padding: 10px;
+  cursor: pointer;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

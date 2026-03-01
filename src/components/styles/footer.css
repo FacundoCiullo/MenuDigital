@@ -1,0 +1,36 @@
+/* =========================================================
+  ⭐ 7) Footer
+========================================================= */
+
+footer {
+    padding: 2rem;
+    color: var(--text);
+    background: var(--card);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+
+.social-links {
+  font-size: 34px;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a{
+    color: var(--accent);
+}
+
+.social-links a:hover {
+  color: var(--nav-text);
+}

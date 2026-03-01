@@ -1,25 +1,41 @@
-import "./FiltersBar.css";
+import "./styles/FiltersBar.css";
 
-const categories = [
-  { id: "all", label: "Todo" },
-  { id: "entradas", label: "Entradas" },
-  { id: "pizzas", label: "Pizzas" },
-  { id: "carnes", label: "Carnes" },
-  { id: "vegan", label: "Vegan" },
-  { id: "sin-tacc", label: "Sin TACC" },
-  { id: "bebidas", label: "Bebidas" }
-];
+export default function FiltersBar({
+  current,
+  setFilter,
+  products,
+  template,
+  categoryConfig
+}) {
+  const config = categoryConfig?.[template];
 
-export default function FiltersBar({ current, setFilter }) {
+  let categories = [];
+
+  // Si hay configuración específica (como burguer)
+  if (config?.order) {
+    categories = ["all", ...config.order];
+  } else {
+    // Si no hay config, generamos desde productos
+    categories = [
+      "all",
+      ...Array.from(new Set(products.map((p) => p.category)))
+    ];
+  }
+
+  const getLabel = (cat) => {
+    if (cat === "all") return "Todo";
+    return config?.labels?.[cat] || cat;
+  };
+
   return (
     <div className="filters-scroll">
-      {categories.map(cat => (
+      {categories.map((cat) => (
         <button
-          key={cat.id}
-          className={`filter-btn ${current === cat.id ? "active" : ""}`}
-          onClick={() => setFilter(cat.id)}
+          key={cat}
+          className={`filter-btn ${current === cat ? "active" : ""}`}
+          onClick={() => setFilter(cat)}
         >
-          {cat.label}
+          {getLabel(cat)}
         </button>
       ))}
     </div>

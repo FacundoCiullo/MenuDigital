@@ -1,0 +1,103 @@
+  /* ================================
+    NAVBAR MOBILE
+  ================================ */
+
+  .nav-mobile {
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    background: var(--nav-bg);
+    color: var(--nav-text);
+
+    padding: 14px 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 50;
+    backdrop-filter: blur(6px);
+  }
+
+  /* Título */
+  .nav-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  /* Controles (selector + switch) */
+  .nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Selector de template */
+  .theme-select {
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .theme-select:hover {
+    border-color: var(--accent);
+  }
+
+  /* ================================
+    SWITCH
+  ================================ */
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--border);
+    transition: 0.3s;
+    border-radius: 30px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.1s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: var(--accent);
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+
+  /* ================================
+    Desktop: ocultar navbar mobile
+  ================================ */
+
