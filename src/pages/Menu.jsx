@@ -10,19 +10,53 @@ import { pizzeriaProducts } from "../data/pizzeriaProducts";
 import { burguerProducts } from "../data/burguerProducts";
 import { cafeProducts } from "../data/cafeProducts";
 
-/**
- * Devuelve los productos según el template seleccionado
- */
+// Configuración de banners por template y categorías
+const templateBanners = {
+  restaurant: {
+    banner: "/img/banner/banner-restaurant.png",
+    categories: {
+      "carnes": "/img/banners/banner-comidas.png",
+      "ensaladas": "/img/banners/banner-ensaladas.png",
+      "entradas": "/img/banners/banner-entradas.png",
+      "bebidas": "/img/banners/banner-bebidas.png",
+      "postres": "/img/banners/banner-postres.png",
+    },
+  },
+  pizzeria: {
+    banner: "/img/banner/banner-pizzeria.png",
+    categories: {
+      "pizzas": "/img/banners/banner-pizzas.png",
+      "empanadas": "/img/banners/banner-empanadas.png",
+      "bebidas": "/img/banners/banner-bebidas.png",
+      "postres": "/img/banners/banner-postres.png",
+    },
+  },
+  burguer: {
+    banner: "/img/banner/banner-burguer.png",
+    categories: {
+      "Hamburguesas": "/img/banners/banner-hamburguesas.png",
+      "Acompañamientos": "/img/banners/banner-acompañamientos.png",
+      "Bebidas": "/img/banners/banner-bebidas.png",
+    },
+  },
+  cafe: {
+    banner: "/img/banner/banner-cafe.png",
+    categories: {
+      "cafeteria": "/img/banners/banner-cafeteria.png",
+      "panificados": "/img/banners/banner-panificados.png",
+      "pasteleria": "/img/banners/banner-pasteleria.png",
+      "bebidas": "/img/banners/banner-bebidas.png",
+    },
+  },
+};
+
+// Devuelve los productos según el template seleccionado
 const getProductsByTemplate = (template) => {
   switch (template) {
-    case "pizzeria":
-      return pizzeriaProducts;
-    case "burguer":
-      return burguerProducts;
-    case "cafe":
-      return cafeProducts;
-    default:
-      return restaurantProducts;
+    case "pizzeria": return pizzeriaProducts;
+    case "burguer":  return burguerProducts;
+    case "cafe":     return cafeProducts;
+    default:         return restaurantProducts;
   }
 };
 
@@ -31,27 +65,32 @@ export default function Menu() {
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
 
-  // Obtiene los productos según el template seleccionado
+  // Obtener productos según template
   const products = useMemo(() => getProductsByTemplate(template), [template]);
 
-  // Resetear filtro cuando cambia el template
-  useEffect(() => {
-    setFilter("all");
-  }, [template]);
+  // Resetear filtro al cambiar de template
+  useEffect(() => setFilter("all"), [template]);
 
-  // Filtra los productos por categoría y búsqueda
+  // Filtrar productos por categoría y búsqueda
   const filteredProducts = useMemo(() => {
-    return products.filter((item) => {
+    return products.filter(item => {
       const matchCategory = filter === "all" || item.category === filter;
-      const matchSearch = item.name.toLowerCase().includes(search.toLowerCase());
+      const matchSearch   = item.name.toLowerCase().includes(search.toLowerCase());
       return matchCategory && matchSearch;
     });
   }, [products, filter, search]);
 
+  // Banners según template
+  const currentTemplateBanners = templateBanners[template] || {};
+  const bannerImg = currentTemplateBanners.banner || null;
+  const categoryBanners = currentTemplateBanners.categories || {};
+
   return (
     <main>
+      {/* Buscador */}
       <SearchBar search={search} setSearch={setSearch} />
 
+      {/* Barra de filtros */}
       <FiltersBar
         current={filter}
         setFilter={setFilter}
@@ -59,7 +98,12 @@ export default function Menu() {
         template={template}
       />
 
-      <ProductsGrid products={filteredProducts} />
+      {/* Grilla de productos con banners */}
+      <ProductsGrid
+        products={filteredProducts}
+        bannerImg={bannerImg}
+        categoryBanners={categoryBanners}
+      />
     </main>
   );
 }

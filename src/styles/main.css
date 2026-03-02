@@ -222,3 +222,20 @@ h4 {
   from { transform: scale(0.9); opacity: 0; }
   to   { transform: scale(1); opacity: 1; }
 }
+
+
+.products-banner,
+.category-banner {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.products-banner img,
+.category-banner img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}

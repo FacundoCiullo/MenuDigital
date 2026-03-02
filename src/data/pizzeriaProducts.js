@@ -48,7 +48,7 @@ export const pizzeriaProducts = [
     id: 6,
     name: "Empanada de JyQ",
     price: 1500,
-    category: "Empanadas",
+    category: "empanadas",
     tags: [],
     img: "/img/pizzas/p-6.png",
     descripcion: "Jamón cocido y queso fundido."
@@ -57,7 +57,7 @@ export const pizzeriaProducts = [
     id: 7,
     name: "Empanada de Carne",
     price: 4200,
-    category: "Empanadas",
+    category: "empanadas",
     tags: [],
     img: "/img/pizzas/p-7.png",
     descripcion: "Papas con cheddar fundido."

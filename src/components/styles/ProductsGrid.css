@@ -1,0 +1,82 @@
+.products-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  margin: 5px;
+}
+
+/* Banner general arriba de todo */
+.general-banner {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.general-banner img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  max-height: 220px;
+}
+
+/* Banner de categoría */
+.category-banner {
+  position: relative; /* Para superponer overlay y título */
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.category-banner img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 90px;
+  display: block;
+}
+
+/* Overlay oscuro */
+.category-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* Ajusta la opacidad a tu gusto */
+  pointer-events: none; /* Para que no bloquee clicks */
+}
+
+/* Título sobre el banner */
+.category-title-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-shadow: 0 0 6px rgba(0,0,0,0.6);
+  z-index: 1; /* Sobre el overlay */
+}
+
+/* Mantener el estilo de grilla existente */
+.products-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.category-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.category-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 12px 0;
+  margin: 10px 0 5px;
+  border-bottom: 2px solid var(--border);
+  color: var(--text);
+  text-transform: capitalize;
+}
+
+.category-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.5rem;
+}

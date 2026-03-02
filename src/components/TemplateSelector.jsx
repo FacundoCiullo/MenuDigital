@@ -7,10 +7,10 @@ export default function TemplateSelector() {
   const [open, setOpen] = useState(false);
 
   const templates = [
-    { id: "restaurant", label: "Restaurante" },
-    { id: "pizzeria", label: "Pizzeria" },
-    { id: "burguer", label: "Hamburgueria" },
-    { id: "cafe", label: "Cafetería" }
+    { id: "restaurant", label: "Demo Restaurante" },
+    { id: "pizzeria", label: "Demo Pizzeria" },
+    { id: "burguer", label: "Demo Hamburgueria" },
+    { id: "cafe", label: "Demo Cafetería" }
   ];
 
   const currentLabel =

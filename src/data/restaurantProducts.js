@@ -88,5 +88,14 @@ export const restaurantProducts = [
     tags: [],
     img: "/img/restorante/r-10.png",
     descripcion: "Flan tradicional con caramelo."
+  },
+    {
+    id: 11,
+    name: "Gaseosa",
+    price: 1800,
+    category: "bebidas",
+    tags: [],
+    img: "/img/hamburguesas/h-8.png",
+    descripcion: "Bebida fría."
   }
 ];

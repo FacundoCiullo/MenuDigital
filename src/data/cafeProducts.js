@@ -88,5 +88,14 @@ export const cafeProducts = [
     tags: [],
     img: "/img/cafe/c-10.png",
     descripcion: "Cookie artesanal con chips de chocolate."
-  }
+  },
+  {
+  id: 8,
+  name: "Gaseosa Cola",
+  price: 1800,
+  category: "bebidas",
+  tags: [],
+  img: "/img/pizzas/p-10.png",
+  descripcion: "Bebida cola bien fría."
+}
 ];
