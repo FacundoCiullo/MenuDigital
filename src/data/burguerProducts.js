@@ -6,7 +6,6 @@ export const burguerProducts = [
     category: "Hamburguesas",
     tags: [],
     img: "/img/hamburguesas/h-1.png",
-    hoverImg: "/img/hamburguesas/h-1-alt.png", // Nueva imagen para hover
     descripcion: "Carne, cheddar, lechuga y tomate."
   },
   {
@@ -16,7 +15,6 @@ export const burguerProducts = [
     category: "Hamburguesas",
     tags: [],
     img: "/img/hamburguesas/h-2.png",
-    hoverImg: "/img/hamburguesas/h-2.png",
     descripcion: "Doble carne y doble cheddar."
   },
   {
@@ -26,7 +24,6 @@ export const burguerProducts = [
     category: "Hamburguesas",
     tags: [],
     img: "/img/hamburguesas/h-3.png",
-    hoverImg: "/img/hamburguesas/h-3-alt.png",
     descripcion: "Salsa BBQ y bacon crocante."
   },
   {
@@ -36,7 +33,6 @@ export const burguerProducts = [
     category: "Hamburguesas",
     tags: ["veg"],
     img: "/img/hamburguesas/h-4.png",
-    hoverImg: "/img/hamburguesas/h-4-alt.png",
     descripcion: "Medallón vegetal con mix de verduras."
   },
   {
@@ -45,8 +41,7 @@ export const burguerProducts = [
     price: 3000,
     category: "Acompañamientos",
     tags: [],
-    img: "/img/hamburguesas/h-11.png",
-    hoverImg: "/img/hamburguesas/h-11-alt.png",
+    img: "/img/hamburguesas/h-5.png",
     descripcion: "Papas bastón doradas."
   },
   {
@@ -55,8 +50,7 @@ export const burguerProducts = [
     price: 4200,
     category: "Acompañamientos",
     tags: [],
-    img: "/img/hamburguesas/h-12.png",
-    hoverImg: "/img/hamburguesas/h-12-alt.png",
+    img: "/img/hamburguesas/h-6.png",
     descripcion: "Con cheddar fundido y panceta."
   },
   {
@@ -65,8 +59,7 @@ export const burguerProducts = [
     price: 3900,
     category: "Acompañamientos",
     tags: [],
-    img: "/img/hamburguesas/h-13.png",
-    hoverImg: "/img/hamburguesas/h-13-alt.png",
+    img: "/img/hamburguesas/h-7.png",
     descripcion: "Aros rebozados y crujientes."
   },
   {
@@ -75,8 +68,7 @@ export const burguerProducts = [
     price: 1800,
     category: "Bebidas",
     tags: [],
-    img: "/img/hamburguesas/h-20.png",
-    hoverImg: "/img/hamburguesas/h-20-alt.png",
+    img: "/img/hamburguesas/h-8.png",
     descripcion: "Bebida fría."
   },
   {
@@ -85,8 +77,7 @@ export const burguerProducts = [
     price: 3200,
     category: "Bebidas",
     tags: [],
-    img: "/img/hamburguesas/h-21.png",
-    hoverImg: "/img/hamburguesas/h-21-alt.png",
+    img: "/img/hamburguesas/h-9.png",
     descripcion: "Pinta artesanal tirada."
   }
 ];

@@ -5,7 +5,7 @@ export const pizzeriaProducts = [
     price: 6500,
     category: "pizzas",
     tags: ["veg"],
-    img: "/img/pizzas/p-muzza.png",
+    img: "/img/pizzas/p-1.png",
     descripcion: "Clásica con salsa casera y abundante muzarella."
   },
   {
@@ -14,7 +14,7 @@ export const pizzeriaProducts = [
     price: 7200,
     category: "pizzas",
     tags: ["veg"],
-    img: "/img/pizzas/p-napo.png",
+    img: "/img/pizzas/p-2.png",
     descripcion: "Muzza, tomate fresco y ajo picado."
   },
   {
@@ -23,7 +23,7 @@ export const pizzeriaProducts = [
     price: 7800,
     category: "pizzas",
     tags: [],
-    img: "/img/pizzas/p-esp.jpg",
+    img: "/img/pizzas/p-3.png",
     descripcion: "Jamón, morrones y aceitunas."
   },
   {
@@ -32,7 +32,7 @@ export const pizzeriaProducts = [
     price: 8500,
     category: "pizzas",
     tags: ["veg"],
-    img: "/img/pizzas/p-4q.webp",
+    img: "/img/pizzas/p-4.png",
     descripcion: "Muzza, roquefort, parmesano y provolone."
   },
   {
@@ -41,7 +41,7 @@ export const pizzeriaProducts = [
     price: 8000,
     category: "pizzas",
     tags: ["veg"],
-    img: "/img/pizzas/p-fuga.png",
+    img: "/img/pizzas/p-5.png",
     descripcion: "Rellena de queso y cebolla caramelizada."
   },
   {
@@ -50,7 +50,7 @@ export const pizzeriaProducts = [
     price: 1500,
     category: "Empanadas",
     tags: [],
-    img: "/img/entradas/empanada.png",
+    img: "/img/pizzas/p-6.png",
     descripcion: "Jamón cocido y queso fundido."
   },
   {
@@ -59,7 +59,7 @@ export const pizzeriaProducts = [
     price: 4200,
     category: "Empanadas",
     tags: [],
-    img: "/img/entradas/papas.png",
+    img: "/img/pizzas/p-7.png",
     descripcion: "Papas con cheddar fundido."
   },
   {
@@ -68,7 +68,7 @@ export const pizzeriaProducts = [
     price: 1800,
     category: "bebidas",
     tags: [],
-    img: "/img/hamburguesas/h-20.png",
+    img: "/img/pizzas/p-10.png",
     descripcion: "Bebida cola bien fría."
   },
   {
@@ -77,7 +77,7 @@ export const pizzeriaProducts = [
     price: 2800,
     category: "bebidas",
     tags: [],
-    img: "/img/hamburguesas/h-21.png",
+    img: "/img/pizzas/p-11.png",
     descripcion: "Cerveza suave."
   },
   {
@@ -86,7 +86,7 @@ export const pizzeriaProducts = [
     price: 3200,
     category: "postres",
     tags: [],
-    img: "/img/postres/brownie.png",
+    img: "/img/pizzas/p-20.png",
     descripcion: "Brownie artesanal."
   }
 ];

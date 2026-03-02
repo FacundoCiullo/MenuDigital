@@ -5,7 +5,7 @@ export const restaurantProducts = [
     price: 8900,
     category: "carnes",
     tags: [],
-    img: "/img/carnes/milanesa.png",
+    img: "/img/restorante/r-1.png",
     descripcion: "Milanesa de carne con salsa de tomate, jamón y queso gratinado."
   },
   {
@@ -14,7 +14,7 @@ export const restaurantProducts = [
     price: 11500,
     category: "carnes",
     tags: [],
-    img: "/img/carnes/bife.png",
+    img: "/img/restorante/r-2.png",
     descripcion: "Corte jugoso a la parrilla con chimichurri casero."
   },
   {
@@ -23,16 +23,16 @@ export const restaurantProducts = [
     price: 7600,
     category: "carnes",
     tags: ["sin-tacc"],
-    img: "/img/carnes/pollo.png",
+    img: "/img/restorante/r-3.png",
     descripcion: "Suprema grillada con limón y guarnición liviana."
   },
   {
     id: 4,
-    name: "Ensalada Vegana",
+    name: "Ensalada",
     price: 5200,
     category: "ensaladas",
     tags: ["veg"],
-    img: "/img/ensaladas/vegana.png",
+    img: "/img/restorante/r-4.png",
     descripcion: "Mix de verdes, tomate cherry y aderezo cítrico."
   },
   {
@@ -41,7 +41,7 @@ export const restaurantProducts = [
     price: 3000,
     category: "entradas",
     tags: [],
-    img: "/img/entradas/papas.png",
+    img: "/img/restorante/r-5.png",
     descripcion: "Papas bastón doradas y crujientes."
   },
   {
@@ -50,7 +50,7 @@ export const restaurantProducts = [
     price: 1500,
     category: "entradas",
     tags: [],
-    img: "/img/entradas/empanada.png",
+    img: "/img/restorante/r-6.png",
     descripcion: "Carne cortada a cuchillo con especias."
   },
   {
@@ -59,7 +59,7 @@ export const restaurantProducts = [
     price: 2600,
     category: "bebidas",
     tags: ["sin-tacc"],
-    img: "/img/bebidas/limonada.png",
+    img: "/img/restorante/r-7.png",
     descripcion: "Limonada natural con menta fresca."
   },
   {
@@ -68,7 +68,7 @@ export const restaurantProducts = [
     price: 2800,
     category: "bebidas",
     tags: [],
-    img: "/img/bebidas/cerveza.png",
+    img: "/img/restorante/r-8.png",
     descripcion: "Cerveza suave y refrescante."
   },
   {
@@ -77,7 +77,7 @@ export const restaurantProducts = [
     price: 3800,
     category: "postres",
     tags: [],
-    img: "/img/postres/brownie.png",
+    img: "/img/restorante/r-9.png",
     descripcion: "Brownie tibio con helado de vainilla."
   },
   {
@@ -86,7 +86,7 @@ export const restaurantProducts = [
     price: 2500,
     category: "postres",
     tags: [],
-    img: "/img/postres/flan.png",
+    img: "/img/restorante/r-10.png",
     descripcion: "Flan tradicional con caramelo."
   }
 ];

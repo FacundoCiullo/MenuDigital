@@ -32,7 +32,7 @@ export const cafeProducts = [
     price: 900,
     category: "panaderia",
     tags: [],
-    img: "/img/cafe/medialuna.png",
+    img: "/img/cafe/c-4.png",
     descripcion: "Clásica medialuna de manteca."
   },
   {
@@ -41,7 +41,7 @@ export const cafeProducts = [
     price: 3200,
     category: "panaderia",
     tags: [],
-    img: "/img/cafe/tostado.png",
+    img: "/img/cafe/c-5.png",
     descripcion: "Sándwich tostado de jamón y queso."
   },
   {
@@ -50,7 +50,7 @@ export const cafeProducts = [
     price: 2800,
     category: "pasteleria",
     tags: [],
-    img: "/img/postres/brownie.png",
+    img: "/img/cafe/c-6.png",
     descripcion: "Brownie artesanal húmedo."
   },
   {
@@ -59,7 +59,7 @@ export const cafeProducts = [
     price: 3500,
     category: "pasteleria",
     tags: [],
-    img: "/img/postres/cheesecake.png",
+    img: "/img/cafe/c-7.png",
     descripcion: "Cheesecake con frutos rojos."
   },
   {
@@ -68,7 +68,7 @@ export const cafeProducts = [
     price: 2400,
     category: "bebidas",
     tags: [],
-    img: "/img/bebidas/limonada.png",
+    img: "/img/cafe/c-8.png",
     descripcion: "Limonada natural."
   },
   {
@@ -77,7 +77,7 @@ export const cafeProducts = [
     price: 1600,
     category: "cafeteria",
     tags: [],
-    img: "/img/cafe/te.png",
+    img: "/img/cafe/c-9.png",
     descripcion: "Té premium en hebras."
   },
   {
@@ -86,7 +86,7 @@ export const cafeProducts = [
     price: 1200,
     category: "pasteleria",
     tags: [],
-    img: "/img/cafe/cookie.png",
+    img: "/img/cafe/c-10.png",
     descripcion: "Cookie artesanal con chips de chocolate."
   }
 ];

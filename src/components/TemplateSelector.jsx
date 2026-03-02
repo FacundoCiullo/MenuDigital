@@ -7,7 +7,7 @@ export default function TemplateSelector() {
   const [open, setOpen] = useState(false);
 
   const templates = [
-    { id: "restaurant", label: "Restaurant" },
+    { id: "restaurant", label: "Restaurante" },
     { id: "pizzeria", label: "Pizzeria" },
     { id: "burguer", label: "Hamburgueria" },
     { id: "cafe", label: "Cafetería" }
@@ -27,7 +27,7 @@ export default function TemplateSelector() {
         className="selector-toggle"
         onClick={() => setOpen(!open)}
       >
-        {currentLabel} <span className="arrow">{open ? "▲" : "▼"}</span>
+        {currentLabel} <span className="arrow">{open ? "" : ""}</span>
       </button>
 
       {open && (

@@ -10,6 +10,9 @@ import { pizzeriaProducts } from "../data/pizzeriaProducts";
 import { burguerProducts } from "../data/burguerProducts";
 import { cafeProducts } from "../data/cafeProducts";
 
+/**
+ * Devuelve los productos según el template seleccionado
+ */
 const getProductsByTemplate = (template) => {
   switch (template) {
     case "pizzeria":
@@ -23,41 +26,24 @@ const getProductsByTemplate = (template) => {
   }
 };
 
-// 🔥 CONFIGURACIÓN DE CATEGORÍAS POR RUBRO
-const categoryConfig = {
-  burguer: {
-    order: ["Hamburguesas", "Acompañamientos", "Bebidas"],
-    labels: {
-      burgers: "Hamburguesas",
-      sides: "Acompañamientos",
-      drinks: "Bebidas"
-    }
-  }
-};
-
 export default function Menu() {
   const { template } = useTemplate();
-
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
 
-  const products = useMemo(() => {
-    return getProductsByTemplate(template);
-  }, [template]);
+  // Obtiene los productos según el template seleccionado
+  const products = useMemo(() => getProductsByTemplate(template), [template]);
 
-  // Resetear filtro cuando cambia el rubro
+  // Resetear filtro cuando cambia el template
   useEffect(() => {
     setFilter("all");
   }, [template]);
 
+  // Filtra los productos por categoría y búsqueda
   const filteredProducts = useMemo(() => {
     return products.filter((item) => {
-      const matchCategory =
-        filter === "all" || item.category === filter;
-
-      const matchSearch =
-        item.name.toLowerCase().includes(search.toLowerCase());
-
+      const matchCategory = filter === "all" || item.category === filter;
+      const matchSearch = item.name.toLowerCase().includes(search.toLowerCase());
       return matchCategory && matchSearch;
     });
   }, [products, filter, search]);
@@ -71,7 +57,6 @@ export default function Menu() {
         setFilter={setFilter}
         products={products}
         template={template}
-        categoryConfig={categoryConfig}
       />
 
       <ProductsGrid products={filteredProducts} />
